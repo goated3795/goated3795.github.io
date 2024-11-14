@@ -34,8 +34,8 @@ nav {
 }
 
 nav ul {
-    max-width: 40%;
-    transform: translate(120%, -700%);
+    max-width: 20%;
+    transform: translate(400%, -1400%);
     display: flex;
     align-items: right;
     justify-content: space-between;
