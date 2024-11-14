@@ -15,15 +15,13 @@
     html,body{height:175%;}
     body {
       /* now we will make the image take up the entire page */
+      /* now we will make the image take up the entire page */
       background: url('cropped_flipped_vertical_balmer.png'
       )no-repeat center center scroll;
       min-height: 100vh;
       width: 100%;
     }
-    h2 {
-        justify-content: center;
-    }
-    </style> 
+</style>
 <body>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <header>
@@ -45,7 +43,20 @@
                 much more sustainable.</p>
         </div>
     </header>
-      <h2 id="technology"> Our Technology </h2> 
+    <style>
+    #outer {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        transform: translate(0%, -150%);
+      }
+      
+    </style>
+      
+                <div id="outer" > 
+                    <h2> Our Technology </h2> </div> <h2></h2> 
+
+    <section id="technology" >
             <div class="container">
             <div class="tech-features">
                 <div class="feature">
@@ -62,8 +73,9 @@
                         can store this much energy or release it as quickly. 
                     </p>
             </div>
-        </div> 
         </div>
+    </section>
+ 
     <style>
         .raiseAbout {
             width:100%;
