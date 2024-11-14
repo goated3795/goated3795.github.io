@@ -34,8 +34,8 @@ nav {
 }
 
 nav ul {
-    max-width: 40%;
-    transform: translate(120%, -400%);
+    max-width: 80%;
+    transform: translate(60%, -200%);
     display: flex;
     align-items: right;
     justify-content: space-between;
@@ -61,7 +61,7 @@ nav ul {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 120%;
+    font-size: 80%;
 }
 
 .hero {
