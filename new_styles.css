@@ -1,0 +1,166 @@
+/* General Styles */
+/* This is in your CSS file or inside <style> tags */
+@media (max-width: 800px) {
+    /* Styles for screens 768px or smaller */
+    body {
+        background-size: contain; /* Adjust background for smaller screens */
+    }
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+    color: #ffffff;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    position: relative;
+    color: white;
+}
+
+nav {
+    align-items: center;
+    background-color: rgb(0 0 0 / 0%);
+    color: #ffffff;
+    margin-bottom: 1%;
+    transform: translate(0, -15%);
+}
+
+nav ul {
+    max-width: 50%;
+    transform: translate(75%, -200%);
+    padding: -1%;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 5%;
+}
+
+.logo h1 {
+    margin-left: 2.5%;
+    font-size: 250%;
+    max-width: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    background-color: rgb(0 0 0 / 0%);
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.hero {
+    text-align: center;
+    position: absolute;
+    left: 0%;
+    transform: translate(0%, 0%);
+    background-color: rgb(0 0 0 / 0%);
+    max-width: 100%;
+}
+
+.hero h2 {
+    font-size: 300%;
+    background-color: rgb(0 0 0 / 0%);
+    margin-top: -4%;
+    margin-bottom: -1%
+}
+
+.hero p {
+    font-size: 150%;
+}
+
+.btn {
+    background-color: #FF6A00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 50px 0;
+    background-color: rgb(0 0 0 / 0%);
+}
+
+.bg-light {
+    background-color: rgb(0 0 0 / 0%);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 220%;
+    background-color: rgb(0 0 0 / 0%);
+    color: #ffffff;
+}
+
+.tech-features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 30%;
+    background-color: rgb(0 0 0 / 0%);
+    color: white;
+}
+
+.feature h3 {
+    font-size: 125%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Contact Form */
+form {
+    transform: translate(0%, -60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0 0 0 / 0%);
+    color: #ffffff;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: #ffffff;
+}
+
+button[type="submit"] {
+    background-color: #FF6A00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

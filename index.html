@@ -1,212 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- My laptop screen is 3072x1920. It's ~ 2.5 x as tall as my screen. Now to scale each 
+ pixel. For height, 1% is obv 72 pixels. For width, it's obv 19 pixels. -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultra Electrics LLC</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            color: white;
-            overflow-x: hidden;
-            text-align: center;
-        }
-        .background {
-            position: absolute;
-            width: 100%;
-            height: 300%;
-            background: url('cropped_flipped_vertical_balmer.svg') center center;
-            background-size: cover;
-            z-index: -1;
-            opacity: 1;
-        }
-        header {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            font-size: 2em;
-            margin: 0;
-        }
-        .nav-links {
-            display: flex;
-            gap: 20px;
-            font-size: 1em;
-        }
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-        }
-        .section {
-            padding: 50px 20px;
-        }
-        .section h2 {
-            font-size: 2.5em;
-            margin: 0.5em 0;
-            padding: 0 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-        .section p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: auto;
-            padding: 0 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-        .technology-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin: 40px 0;
-        }
-        .tech-item {
-            background-color: rgba(0, 0, 0, 0.7);
-            width: 300px;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .tech-item h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        @media only screen and (max-width: 768px) {
-            header h1 {
-                font-size: 1.5em;
-            }
-            .nav-links {
-                font-size: 0.9em;
-            }
-            .section h2 {
-                font-size: 2em;
-            }
-            .section p {
-                font-size: 1em;
-            }
-            .tech-item {
-                width: 100%;
-            }
-        }
-        footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(0 0 0 / 0%);
-    color: #ffffff;
-}
-
-input, textarea {
-    width: 50%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid white;
-    border-radius: 5px;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ultra Electric - Revolutionizing Energy Storage with 
+        100x Better Batteries</title>
+    <link rel="stylesheet" href="new_styles.css">
+</head>
+<style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
     background-color: black;
     color: #ffffff;
-}
-
-button[type="submit"] {
-    background-color: #FF6A00;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}   
-    </style>
-</head>
+    }
+    body {
+      /* now we will make the image take up the entire page */
+      min-height: 100vh;
+    }
+    </style> 
 <body>
-    <div class="background"></div>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <header>
-        <h1>Ultra Electrics LLC</h1>
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Technology</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+        <nav>
+            <div class="logo">
+                <h1>Ultra Electric</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li> 
+                <li><a href="#technology">Our Technology</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-    </header>
 
-    <section class="section">
-        <h2>Small Batteries, Big Energy</h2>
-        <p>Our cutting-edge research pioneers ultra-energy batteries that store 100 times more energy per kilogram than conventional lithium-ion, while being safe and much more sustainable.</p>
-    </section>
+        <div class="hero" id="slogan_container">
+            <div style="position: absolute; top: -50%; align-items: center; 
+            justify-content: center;left:0; right:0;">
+            <h2>Small Batteries, Big Energy</h2>
+            <p>Our batteries store 100 times more energy per kilogram than conventional 
+                lithium-ion.</p>
+            </div>
+            <img src="h_beta.png" alt="Ultra Electric" 
+            style="width:100%; height:100%; object-fit:contain;">
+        </div>
+    </header>
     <style>
-        .raiseTechnology {
-            width:100%;
-            justify-content: center;
-            transform: translate(0%, -5%);
-          }
+    #outer {    
+        width:100%;
+        display: flex;
+        justify-content: center;
+        margin-top: -18%;
+        margin-bottom: -5%;
+      }
+      
     </style>
-    <section class="section raiseTechnology">
-        <h2>Technology</h2>
-        <div class="technology-grid">
-            <div class="tech-item">
-                <h3>Scalable Solutions</h3>
-                <p>Our technology is designed to scale from small installations to large grid-scale energy storage systems, ensuring adaptability to any disaster.</p>
-            </div>
-            <div class="tech-item">
-                <h3>Advanced Materials</h3>
-                <p>Utilizing novel materials, we are improving energy density and storage efficiency in ways never seen before in the energy industry.</p>
-            </div>
-            <div class="tech-item">
-                <h3>Rechargeable Batteries</h3>
-                <p>Can be recharged or even replaced easily. No other rechargeable battery of the same mass can store this much energy or release it as quickly.</p>
+      
+                <div id="outer" > 
+                    <h2> Our Technology </h2> </div> <h2></h2> 
+
+    <section id="technology" >
+            <div class="container">
+            <div class="tech-features">
+                <div class="feature">
+                    <h3>Advanced Materials</h3>
+                    <p>Utilizing novel materials, we are improving energy density and storage 
+                        efficiency in ways never seen before in the energy industry.</p>
+                </div>
+                <div class="feature">
+                    <h3>Scalable Solutions</h3>
+                    <p>Our technology is designed to scale from small installations to large 
+                    grid-scale energy storage systems, ensuring adaptability to any need.</p>
+                </div>
+                <div class="feature">
+                    <h3>Rechargable</h3>
+                    <p>Can be recharged or even replaced easily. No other rechargable battery 
+                        the same mass can store this much energy or release it as quickly. 
+                    </p>
             </div>
         </div>
     </section>
-
+ 
     <style>
         .raiseAbout {
             width:100%;
             justify-content: center;
-            transform: translate(0%, -20%);
+            margin-top: 0%;
           }
     </style>
 
-    <section id="about" class="section raiseAbout">
+    <section id="about" class="raiseAbout">
+        <header>
         <div class="container">
             <h2>About Us</h2>
-            <p> Our team at Ultra Electric is obsessed with revolutionizing energy storage. Our insatiable appetite for innovation, undying work ethic, and world-class techinical skills were cultivated in the Bachelors of Physics Program at the most selective college in the US — Caltech, the California Institute of Technology.</p>
+            <p> Our team at Ultra Electric is obsessed with revolutionizing energy storage. 
+                Our insatiable appetite for innovation, undying work ethic, and world-class 
+                techinical skills were cultivated in the Bachelors of Physics Program at the 
+                most selective college in the US — Caltech, the California Institute of 
+                Technology.</p>
         </div>
+    </header>
     </section>
 
     <style>
         .raiseContact {
             width:100%;
             justify-content: center;
-            transform: translate(0%, -25%);
+            margin-top: -2%;
           }
     </style>
 
-    <section id="contact" class="section raiseContact">
+    <section id="contact" class="raiseContact bg-dark">
         <div class="container">
             <form action="#" method="post" id="contactForm">
                 <h2>
                     Contact Us 
                 </h2>
-                <label for="name"><p>Name:</p></label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email"><p>Your Email Address:</p></label>
+                <label for="email">Your Email Address:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message"><p>Message:</p></label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required>
+                    
+                </textarea>
 
                 <button type="submit" class="btn">Send Message</button>
             </form>
@@ -217,6 +142,6 @@ button[type="submit"] {
         <p>&copy; 2024 Ultra Electric. All Rights Reserved.</p>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 </html>
